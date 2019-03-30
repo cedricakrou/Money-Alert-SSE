@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/deselectionnerDonnee"
+        app:showAsAction="always"
+        android:title="@string/texteDeselectionnerDonnee"
+        android:icon="@drawable/desectionner" />
+
+
+    <item
+        android:id="@+id/suppressionDonnee"
+        app:showAsAction="always"
+        android:title="@string/texteSupprimerDonnee"
+        android:icon="@drawable/supprimer" />
+
+
+    <item
+        android:id="@+id/modifierDonnee"
+        app:showAsAction="always"
+        android:title="@string/texteModifierDonnee"
+        android:icon="@drawable/modifier"/>
+
+</menu>

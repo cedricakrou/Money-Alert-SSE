@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/couleurBlanche"
+    tools:context="sse.com.moneyalertsse.menu.apropos.AproposFragment"
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageSSEapropos"
+            android:layout_width="wrap_content"
+            android:layout_height="75sp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icone"
+            />
+
+        <TextView
+            android:id="@+id/texteIntroApropos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/introTexteApropos"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/espace"
+            android:paddingStart="@dimen/espace"
+            android:layout_below="@id/imageSSEapropos" />
+
+        <TextView
+            android:id="@+id/textePresentationMembreSSEApropos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/espace"
+            android:layout_marginLeft="@dimen/espace"
+            android:paddingLeft="@dimen/espace"
+            android:text="@string/presentationMembreSSETexteApropos"
+            android:textSize="15sp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/texteIntroApropos"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/texteConclusionApropos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conclusionTexteApropos"
+            android:paddingTop="@dimen/espace"
+            android:textSize="15sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="@dimen/espace"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/textePresentationMembreSSEApropos"
+            android:paddingStart="30dp"
+            android:paddingEnd="@dimen/espace" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="75sp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icone"
+            android:layout_below="@id/texteConclusionApropos"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>

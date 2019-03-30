@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/idEtuiGain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopAffichageDonneeBd">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingAdroiteAffichageDonneeBd">
+
+            <TextView
+                android:id="@+id/libelleGainBd"
+                style="@style/styleAffichageDonneeBd"/>
+
+            <TextView
+                android:id="@+id/infoDateGainBd"
+                style="@style/styleAffichageDonneeBd"
+                android:layout_toEndOf="@id/libelleGainBd"
+                android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                android:text="@string/periodeDateBudget"
+                />
+
+            <TextView
+                android:id="@+id/dateGainBd"
+                style="@style/styleAffichageDonneeBd"
+                android:layout_toEndOf="@id/infoDateGainBd"
+                android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                />
+
+           <TextView
+                android:id="@+id/infoHeureGainBd"
+                style="@style/styleAffichageDonneeBd"
+                android:layout_toEndOf="@id/dateGainBd"
+                android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                android:text="@string/periodeHeure" />
+
+           <TextView
+                android:id="@+id/heureGainBd"
+                style="@style/styleAffichageDonneeBd"
+                android:layout_toEndOf="@id/infoHeureGainBd"
+                android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd" />
+
+
+            <TextView
+                android:id="@+id/descriptionGainBd"
+                android:layout_width="@dimen/largeurDescriptionMotifDonneBd"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|normal"
+                android:textSize="@dimen/tailleTexteAffichageDonnee"
+                android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+                android:layout_marginEnd="@dimen/marginEnbasAffichageDonneeBd"
+                android:layout_below="@id/libelleGainBd" />
+
+            <TextView
+                android:id="@+id/montantGainBd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/libelleGainBd"
+                android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+                android:layout_toEndOf="@id/descriptionGainBd"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/tailleTextemontantDonneBd" />
+
+     </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

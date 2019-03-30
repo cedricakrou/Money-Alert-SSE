@@ -1,0 +1,192 @@
+<resources>
+
+    // les info du menu parametre
+
+    <string name="parametre_ajouter_type_depense">Ajouter un nouveau type de dépense</string>
+    <string name="parametre_ajouter_type_gain">Ajouter un nouveau type de gain</string>
+    <string name="parametre_langue">Langue</string>
+    <string name="parametre_notification">Notification</string>
+    <string name="parametre_suggestion">Suggestion</string>
+
+    <string name="parametre_summary_suggestion">Cliquer pour nous faire une suggestion</string>
+
+    <string name="parametre_valider">Valider</string>
+    <string name="parametre_annuler">Annuler</string>
+
+    <string name="parametre_summary_ajouter_type_depense">Cliquer pour ajouter un nouveau type de dépense</string>
+    <string name="parametre_summary_ajouter_type_gain">Cliquer pour ajouter un nouveau type de gain</string>
+
+    <string name="parametre_summary_langue">Cliquez pour sélectionner votre langue</string>
+    <string name="parametre_summary_notification">Souhaitez vous recevoir des notifications ?</string>
+
+    <string-array name="parametre_listeLangue">
+        <item>Français</item>
+        <item>Anglais</item>
+    </string-array>
+
+    <string-array name="parametre_listeLangueKey">
+        <item>fr</item>
+        <item>en</item>
+    </string-array>
+
+
+    // parametre global de l'application
+
+    <string name="app_name">Money Alert SSE</string>
+    <string name="texteSortirDeLapp">"Voulez vous sortir de l'application ?"</string>
+    <string name="texteSortirOui">"Oui"</string>
+    <string name="texteSortirNon">"Non"</string>
+
+    // parametre de dépense
+
+    <string name="texteDepense">Dépenses</string>
+    <string name="utiliteDepense">Cette dépense est-elle utile ?</string>
+    <string name="periodeDateDepense">effectué</string>
+    <string name="texteUtilite">Cette dépense était: </string>
+
+    <string name="periodeHeure">à</string>
+
+    // parametre de gain
+    <string name="montantTexte">Entrez le montant</string>
+    <string name="descriptionTexte">Fournir les details sur l\'opération</string>
+    <string name="boutonTexte">Ajouter</string>
+
+    // parametre statistique
+
+    // paramatre budget
+
+    <string name="periodeDateBudget">ajouté</string>
+
+    // parametre equipe SSE
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="texteGain">Gains</string>
+    <string name="choixDateHeureGain">Voulez vous choisir la date ? (Par défault la date courante est choisie) </string>
+    <string name="texteStatistique">Statistiques</string>
+    <string name="equipeSSE">Equipe SSE</string>
+    <string name="parametreSSE">Paramètres</string>
+    <string name="texteBudget">Budgets</string>
+    <string name="texteAccueil">Accueil</string>
+
+    <string-array name="utiliteDepense">
+        <item>utile</item>
+        <item>inutile</item>
+    </string-array>
+
+    <string name="texteEntreprise">ENTREPRISE</string>
+
+    // information SSE
+
+    <string name="texteSiteSSE">www.sse.ci</string>
+    <string name="texteSierpinski">SIERPINSKI</string>
+    <string name="numSSE">09882886</string>
+    <string name="emailSSE">ssentreprise912@gmail.com</string>
+    <string name="adresseSSE">Abidjan - Treichville</string>
+    <string name="facebookSSE">Sierpinski Entreprise - SSE</string>
+    <string name="instagramSSE">sse912</string>
+    <string name="presentationSSE">La SSE est une startup fondée en Mars 2018 par des étudiants ivoiriens issus de la prestigieuse école des technologies ESATIC. \n
+        Dynamisme, créativité et savoir-faire sont nos maîtres mots.\n
+        Nous comptons dans nos rangs autant de développeurs passionnés toujours au parfum de la technologie que des designers fous d\'idées. Un condensé de technicité et d\'art graphique réunis dans une seule équipe qui se veut de répondre avec brio à vos besoins. \n
+        SSE, l\'originilité à votre service.
+    </string>
+
+    // les entetes
+
+    <string name="texteAffichageDepense">AFFICHAGE DEPENSE</string>
+    <string name="texteAffichageGain">AFFICHAGE GAIN</string>
+
+    <string name="texteEnregsitrementGain">ENREGISTREMENT GAINS</string>
+    <string name="texteEnregsitrementDepense">ENREGISTREMENT DEPENSES</string>
+
+    <string name="texteStatistiqueDepense">STATISTIQUE DEPENSES</string>
+    <string name="texteStatistiqueGain">STATISTIQUE GAINS</string>
+
+
+    // les infos du menu de suppression
+
+    <string name="texteSupprimerDonnee">Supprimer</string>
+    <string name="texteModifierDonnee">Modifier</string>
+    <string name="texteDeselectionnerDonnee">Désélectionner</string>
+
+
+    <string name="infoNotif">Avez vous enregistré vos opérations récentes ?</string>
+
+    // menu principale
+
+    <string name="texteSoldeActuel">solde actuel</string>
+    <string name="texteCompteEtOperation">Tous mes comptes et opérations</string>
+    <string name="texteMesRevenus">Mes Révenus</string>
+    <string name="texteMesDepenses">Mes Dépenses</string>
+    <string name="texteMonBudget">Mon budget</string>
+
+
+    <string name="texteSelectionnerUnTypeOperation">Sélectionner un type d\'opération</string>
+
+    <string name="aproposSSE">A propos</string>
+    <string name="aideSSE">Aide</string>
+
+    // new
+
+    <string name="introTexteApropos">
+        Money Alert SSE(Sierpinski Entreprise) est une application de gestion de dépense mis en ligne le dimanche 14 octobre 2018. \n
+        Elle est à sa version 1.1.\n
+        Elle a été pensée et conçue par les membres de la Sierpinski Entreprise:\n
+    </string>
+
+    <string name="presentationMembreSSETexteApropos">
+
+        \t - TACKA Walter Mickael \n
+        \t - DIKE Jean Daniel \n
+        \t - EDOUKOU RICHMOND EKI \n
+        \t - ETTY FOULE ANGE AYMARD \n
+        \t - KAKOU AKROU CEDRIC \n
+        \t - ADOPO JORDAN  \n
+        \t - AHISSAN OI SAMUEL \n
+        \t - Edy \n
+        \t - CISSOKO YANN
+
+    </string>
+
+    <string name="conclusionTexteApropos">
+
+        MONEY ALERT SSE a pour objectif d\'aider ses utilisateurs à contrôler leur
+        argent et à établir un budget prévisionnel.
+
+    </string>
+
+    <string name="messageEchec">Echec de l\'opération</string>
+    <string name="messageReusiste">Succès de l\'opération</string>
+
+
+    <string name="texteIntroAide">Comment utiliser Money Alert SSE?</string>
+
+    // new texte Aide
+
+    <string name="texteGeneralGain">Le menu Gains contient 2 onglets</string>
+    <string name="texteEnregistrementGainAide">Cet onglet contient un formulaire qui permet à l\'utilisateur de renseigner les informations necéssaires sur ses gains enregistrés et les informations rélatives.</string>
+    <string name="texteVisualisationGainAide">Cet onglet permet à l\'utilisateur de visualiser les informations necéssaires sur ses gains enregistrés et les informations rélatives.</string>
+
+    <string name="texteGeneralDepense">Le menu dépenses contient 2 onglets</string>
+    <string name="texteEnregistrementDepenseAide">Cet onglet sert contient un formulaire qui permet à l\'utilisateur de renseigner les informations necéssaires sur ses dépenses enregistrées et les informations rélatives.</string>
+    <string name="texteVisualisationDepenseAide">Cet onglet sert contient un formulaire qui permet à l\'utilisateur de visualiser les informations necéssaires sur ses dépenses enregistrées et les informations rélatives.</string>
+
+    <string name="texteGeneralStatistique">Le menu Statistiques contient 2 onglets</string>
+    <string name="texteStatistiqueGainAide">
+        Cet onglet vous présente vos différentes sources de gains dans un diagramme circulaire en pourcentage (%).
+    </string>
+
+
+    <string name="texteStatistiqueDepenseAide">Cet onglet sert à présenter les statistiques concernant vos dépenses. \n
+                                    Elles sont scindées en 2 catégories: \n
+                                       \t - les dépenses utiles \n
+                                       \t - les dépenses inutiles"
+    </string>
+
+
+    <string name="texteGeneralBudget">Le menu Budget contient 2 onglets</string>
+    <string name="texteBudgetGainAide">Cet onglet permet de renseigner vos possibles révenus d\'argent pour cette période.</string>
+    <string name="texteBudgetDepenseAide">Cet onglet sert à enregistrer les dépenses prévues pour la période en cours afin d\'élaborer un meilleur contrôle de vos dépenses.</string>
+
+</resources>

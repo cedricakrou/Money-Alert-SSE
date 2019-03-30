@@ -1,0 +1,129 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/idRelativeLayoutMenuBudgetAide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idRelativeLayoutIntroAide" >
+
+        <RelativeLayout
+            android:id="@+id/idEnteteMenuBudgetAide"
+            style="@style/styleEnteteMenuAide" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texteBudget"
+                android:textColor="@color/couleurBlanche"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:id="@+id/idIndicateurMenuBudgetAide"
+                style="@style/styleIndicateurAide" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/idRelativeCorpsMenuBudgetAide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEnteteMenuBudgetAide"
+            android:layout_marginBottom="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textePresentationMenuBudgetAide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/texteGeneralBudget"
+                android:layout_marginBottom="10sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/idRelativeLayoutEnregistrementBudget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textePresentationMenuBudgetAide"
+                android:layout_marginBottom="10sp">
+
+                <RelativeLayout
+                    android:id="@+id/idEnteteEnregistrementMenuBudgetAide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/espace"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texteGain"
+                        android:textColor="@color/couleurBlanche"
+                        />
+
+                    <ImageView
+                        android:id="@+id/idIndicateurEnregistrementBudgetAide"
+                        style="@style/styleIndicateurAide" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/idTexteEnregistrementMenuBudgetAide"
+                    style="@style/styleTexteDescriptifAide"
+                    android:text="@string/texteBudgetGainAide"
+                    android:layout_below="@id/idEnteteEnregistrementMenuBudgetAide"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/idRelativeVisualisationMenuBudgetAide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idRelativeLayoutEnregistrementBudget"
+                android:layout_marginBottom="5sp" >
+
+                <RelativeLayout
+                    android:id="@+id/idEnteteVisualisationMenuBudgetAide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5sp"
+                    android:paddingLeft="@dimen/espace"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texteDepense"
+                        android:textColor="@color/couleurBlanche"
+                        />
+
+                    <ImageView
+                        android:id="@+id/idIndicateurVisualisationBudgetAide"
+                        style="@style/styleIndicateurAide"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/idTexteVisualisationMenuBudgetAide"
+                    style="@style/styleTexteDescriptifAide"
+                    android:text="@string/texteBudgetDepenseAide"
+                    android:layout_below="@id/idEnteteVisualisationMenuBudgetAide"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

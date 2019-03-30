@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sse.com.moneyalertsse.Menu_principale"
+    tools:showIn="@layout/app_bar_menu_principale">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewSoldeBancaire"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageSoldeBancaire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/image_solde"/>
+
+                    <TextView
+                        android:id="@+id/montantSoldeBancaire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/imageSoldeBancaire"
+                        android:layout_marginStart="@dimen/marginCote_viewpaper"
+                        android:text="20000"
+                        android:textSize="@dimen/tailleTextemontantDonneBd"
+                        android:layout_toRightOf="@id/imageSoldeBancaire"
+                        android:layout_marginLeft="@dimen/marginCote_viewpaper" />
+
+                    <TextView
+                        android:id="@+id/texteSoldeBancaire"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/imageSoldeBancaire"
+                        android:layout_below="@id/montantSoldeBancaire"
+                        android:layout_marginStart="@dimen/marginCote_viewpaper"
+                        android:text="@string/texteSoldeActuel"
+                        android:textSize="@dimen/tailleTexteAffichageDonnee"
+                        android:layout_toRightOf="@id/imageSoldeBancaire"
+                        android:layout_marginLeft="@dimen/marginCote_viewpaper" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewTousLesComptes"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginTop="@dimen/marginTopComposant"
+                android:layout_below="@id/cardviewSoldeBancaire">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/texteTousLesComptes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texteCompteEtOperation"/>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/statOperationTousLesComptes"
+                        android:layout_width="120sp"
+                        android:layout_height="200sp" />
+
+                    <TextView
+                        android:id="@+id/texteMesRevenus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/texteTousLesComptes"
+                        android:layout_toEndOf="@id/statOperationTousLesComptes"
+                        android:layout_marginEnd="30sp"
+                        android:layout_marginTop="40sp"
+                        android:text="@string/texteMesRevenus"
+                        android:layout_toRightOf="@id/statOperationTousLesComptes"
+                        android:layout_marginRight="30sp" />
+
+                    <TextView
+                        android:id="@+id/montantMesRevenus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/texteTousLesComptes"
+                        android:layout_toRightOf="@id/texteMesRevenus"
+                        android:layout_marginTop="40sp"
+                        android:text="20000"
+                        android:textColor="#096A09"/>
+
+                    <View
+                        android:id="@+id/idTraitOp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_below="@id/texteMesRevenus"
+                        android:layout_toEndOf="@id/statOperationTousLesComptes"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="#303030"
+                        android:layout_toRightOf="@id/statOperationTousLesComptes" />
+
+                    <TextView
+                        android:id="@+id/texteMesDepenses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idTraitOp"
+                        android:layout_toEndOf="@id/statOperationTousLesComptes"
+                        android:paddingEnd="30sp"
+                        android:text="@string/texteMesDepenses"
+                        android:layout_toRightOf="@id/statOperationTousLesComptes"
+                        android:paddingRight="30sp" />
+
+                    <TextView
+                        android:id="@+id/montantMesDepenses"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idTraitOp"
+                        android:layout_toEndOf="@id/texteMesDepenses"
+                        android:text="20000"
+                        android:textColor="#FF0000"
+                        android:layout_toRightOf="@id/texteMesDepenses" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardviewInfoBudget"
+                android:layout_width="match_parent"
+                android:layout_height="150sp"
+                android:layout_marginTop="@dimen/marginTopComposant"
+                android:layout_below="@id/cardviewTousLesComptes">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/texteMonBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texteMonBudget"/>
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/statBudgetMenu"
+                        android:layout_width="120sp"
+                        android:layout_height="200sp" />
+
+
+                    <TextView
+                        android:id="@+id/texteRevenuBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/texteMonBudget"
+                        android:layout_marginEnd="30sp"
+                        android:layout_toRightOf="@id/statBudgetMenu"
+                        android:layout_marginTop="40sp"
+                        android:text="@string/texteMesRevenus"
+                        android:layout_marginRight="30sp" />
+
+                    <TextView
+                        android:id="@+id/montantRevenuBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/texteMonBudget"
+                        android:layout_toRightOf="@id/texteRevenuBudget"
+                        android:layout_marginTop="40sp"
+                        android:text="20000"
+                        android:textColor="#096A09"/>
+
+                    <View
+                        android:id="@+id/idTraitBudget"
+                        android:layout_width="match_parent"
+                        android:layout_height="1sp"
+                        android:layout_below="@id/texteRevenuBudget"
+                        android:layout_toEndOf="@id/statBudgetMenu"
+                        android:layout_marginTop="5sp"
+                        android:layout_marginBottom="5sp"
+                        android:background="#303030"
+                        android:layout_toRightOf="@id/statBudgetMenu" />
+
+                    <TextView
+                        android:id="@+id/texteDepenseBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idTraitBudget"
+                        android:layout_toEndOf="@id/statBudgetMenu"
+                        android:layout_marginRight="30sp"
+                        android:text="@string/texteMesDepenses"
+                        android:layout_toRightOf="@id/statBudgetMenu" />
+
+                    <TextView
+                        android:id="@+id/montantDepenseBudget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idTraitBudget"
+                        android:layout_toEndOf="@id/texteDepenseBudget"
+                        android:text="20000"
+                        android:textColor="#FF0000"
+                        android:layout_toRightOf="@id/texteDepenseBudget" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

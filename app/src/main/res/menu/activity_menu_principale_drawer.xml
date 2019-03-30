@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_accueil"
+            android:icon="@drawable/accueil"
+            android:title="@string/texteAccueil" />
+        <item
+            android:id="@+id/nav_gain"
+            android:icon="@drawable/gain"
+            android:title="@string/texteGain" />
+        <item
+            android:id="@+id/nav_depense"
+            android:icon="@drawable/depense"
+            android:title="@string/texteDepense" />
+        <item
+            android:id="@+id/nav_statistique"
+            android:icon="@drawable/statistique"
+            android:title="@string/texteStatistique" />
+        <item
+            android:id="@+id/nav_budget"
+            android:icon="@drawable/budget"
+            android:title="@string/texteBudget" />
+    </group>
+
+    <item android:title="@string/texteSiteSSE">
+        <menu>
+            <item
+                android:id="@+id/nav_equipeSSE"
+                android:icon="@drawable/equipe"
+                android:title="@string/equipeSSE" />
+            <item
+                android:id="@+id/nav_apropos"
+                android:icon="@drawable/apropos"
+                android:title="@string/aproposSSE" />
+            <item
+                android:id="@+id/nav_aide"
+                android:icon="@drawable/aide"
+                android:title="@string/aideSSE" />
+
+            <item
+                android:id="@+id/nav_parametreSSE"
+                android:icon="@drawable/parametre"
+                android:title="@string/parametreSSE" />
+        </menu>
+    </item>
+
+</menu>

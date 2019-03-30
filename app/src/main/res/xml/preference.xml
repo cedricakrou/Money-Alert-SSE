@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="@string/parametre_ajouter_type_depense">
+
+        <EditTextPreference
+            android:key="nouveauTypeDepense"
+            android:dialogTitle="@string/parametre_summary_ajouter_type_depense"
+            android:positiveButtonText="@string/parametre_valider"
+            android:negativeButtonText="@string/parametre_annuler"
+            android:summary="@string/parametre_summary_ajouter_type_depense"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/parametre_ajouter_type_gain" >
+
+        <EditTextPreference
+            android:key="nouveauTypeGain"
+            android:dialogTitle="@string/parametre_summary_ajouter_type_gain"
+            android:positiveButtonText="@string/parametre_valider"
+            android:negativeButtonText="@string/parametre_annuler"
+            android:summary="@string/parametre_summary_ajouter_type_gain"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/parametre_langue" >
+
+        <ListPreference
+            android:key="langue"
+            android:summary="@string/parametre_summary_langue"
+            android:dialogTitle="@string/parametre_summary_langue"
+            android:entries="@array/parametre_listeLangue"
+            android:entryValues="@array/parametre_listeLangueKey"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/parametre_notification" >
+
+        <CheckBoxPreference
+            android:key="notification"
+            android:summary="@string/parametre_summary_notification"
+            android:checked="true"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/parametre_suggestion" >
+
+        <EditTextPreference
+            android:key="suggestion"
+            android:dialogTitle="@string/parametre_summary_suggestion"
+            android:positiveButtonText="@string/parametre_valider"
+            android:negativeButtonText="@string/parametre_annuler"
+            android:summary="@string/parametre_summary_suggestion"
+            />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

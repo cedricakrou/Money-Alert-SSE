@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.equipe.EquipeFragment"
+    android:background="@color/couleurBlanche">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rImageAccueilUser"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tailleR1AccueilUser"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:id="@+id/imageSSEAccueilUser"
+                android:layout_width="@dimen/tailleImageSSEenregistrement"
+                android:layout_height="@dimen/tailleImageSSEenregistrement"
+                android:src="@drawable/icone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/espace" />
+
+            <RelativeLayout
+                android:layout_below="@id/imageSSEAccueilUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/espace">
+
+                <TextView
+                    android:id="@+id/idAffichageNomUserAccueil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texteSierpinski"
+                    android:textColor="@color/couleurBlanche"
+                    android:layout_marginEnd="@dimen/marginAdroiteAffichageDonneeBd"/>
+
+                <TextView
+                    android:id="@+id/idAffichagePrenomUserAccueil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texteEntreprise"
+                    android:layout_toEndOf="@id/idAffichageNomUserAccueil"
+                    android:textColor="@color/colorAccent"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardviewAccueilUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tailleCardviewAccueilUser"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginLeft="15dp">
+
+                    <TextView
+                        android:id="@+id/photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/espace"
+                        android:paddingRight="@dimen/espace"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/presentationSSE"
+                        android:textColor="@color/couleurBlanche"
+                        android:textStyle="bold|italic"
+                        android:textSize="12sp"/>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardviewAccueilUser"
+            android:layout_centerHorizontal="true" >
+
+            <RelativeLayout
+                android:id="@+id/rAdresseUserAccueil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espace">
+
+                <ImageView
+                    android:id="@+id/idImageInstagram"
+                    android:layout_width="@dimen/tailleImage"
+                    android:layout_height="@dimen/tailleImage"
+                    android:src="@drawable/instagram"/>
+
+                <TextView
+                    android:id="@+id/idInstagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instagramSSE"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|italic"
+                    android:textSize="@dimen/espace"
+                    android:layout_toEndOf="@id/idImageInstagram"
+                    android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rContactUserAccueil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espace"
+                android:layout_below="@id/rAdresseUserAccueil">
+
+                <ImageView
+                    android:id="@+id/idImageFacebook"
+                    android:layout_width="@dimen/tailleImage"
+                    android:layout_height="@dimen/tailleImage"
+                    android:src="@drawable/facebook"/>
+
+                <TextView
+                    android:id="@+id/idFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/facebookSSE"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|italic"
+                    android:textSize="@dimen/espace"
+                    android:layout_toEndOf="@id/idImageFacebook"
+                    android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rEmailUserAccueil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espace"
+                android:layout_below="@id/rContactUserAccueil" >
+
+                <ImageView
+                    android:id="@+id/idImageGmail"
+                    android:layout_width="@dimen/tailleImage"
+                    android:layout_height="@dimen/tailleImage"
+                    android:src="@drawable/gmail"/>
+
+                <TextView
+                    android:id="@+id/idGmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/emailSSE"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|italic"
+                    android:textSize="@dimen/espace"
+                    android:layout_toEndOf="@id/idImageGmail"
+                    android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                    android:layout_centerHorizontal="true"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rProfessionUserAccueil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espace"
+                android:layout_below="@id/rEmailUserAccueil">
+
+                <ImageView
+                    android:id="@+id/idImageAdresse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/adresse"/>
+
+                <TextView
+                    android:id="@+id/idAdresse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adresseSSE"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold|italic"
+                    android:textSize="@dimen/espace"
+                    android:layout_toEndOf="@id/idImageAdresse"
+                    android:layout_marginStart="@dimen/tailleTexteAffichageDonnee"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

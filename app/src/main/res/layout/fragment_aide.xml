@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sse.com.moneyalertsse.menu.aide.AideFragment"
+    android:background="@color/couleurBlanche">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/idRelativeLayoutIntroAide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageSSEaide"
+            android:layout_width="wrap_content"
+            android:layout_height="75sp"
+            android:paddingTop="5dp"
+            android:src="@drawable/icone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:text="@string/texteIntroAide"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/imageSSEaide"
+            android:layout_marginTop="@dimen/espace"
+            android:layout_marginBottom="@dimen/espace"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/idIncludeGainAide"
+        layout="@layout/content_menu_gain_aide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7sp"
+        android:layout_marginBottom="7sp"
+        android:layout_below="@id/idRelativeLayoutIntroAide"
+    />
+
+    <include
+        android:id="@+id/idIncludeDepenseAide"
+        layout="@layout/content_menu_depense_aide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7sp"
+        android:layout_marginBottom="7sp"
+        android:layout_below="@id/idIncludeGainAide"
+    />
+
+    <include
+        android:id="@+id/idIncludeStatistiqueAide"
+        layout="@layout/content_menu_statistique_aide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7sp"
+        android:layout_marginBottom="7sp"
+        android:layout_below="@id/idIncludeDepenseAide"
+        />
+
+    <include
+        android:id="@+id/idIncludeBudgetAide"
+        layout="@layout/content_menu_budget_aide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7sp"
+        android:layout_marginBottom="7sp"
+        android:layout_below="@id/idIncludeStatistiqueAide"
+        />
+
+
+</RelativeLayout>
+
+</ScrollView>

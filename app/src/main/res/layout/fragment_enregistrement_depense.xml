@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.depense.EnregistrementDepense"
+    android:background="@color/couleurBlanche">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/idLibelleDepense"
+            style="@style/styleChampFormulaire" />
+
+        <EditText
+            android:drawableStart="@drawable/argent"
+            android:id="@+id/idMontantDepense"
+            style="@style/styleChampFormulaire"
+            android:layout_below="@id/idLibelleDepense"
+            android:inputType="numberDecimal"
+            android:hint="@string/montantTexte"
+            android:drawableLeft="@drawable/argent" />
+
+        <EditText
+            android:id="@+id/idDescriptionDeDepense"
+            android:drawableStart="@drawable/description"
+            style="@style/styleChampFormulaire"
+            android:layout_below="@id/idMontantDepense"
+            android:inputType="textImeMultiLine"
+            android:hint="@string/descriptionTexte"
+            android:drawableLeft="@drawable/description" />
+
+        <Switch
+            android:id="@+id/idUtiliteDepense"
+            style="@style/styleChampFormulaire"
+            android:layout_below="@id/idDescriptionDeDepense"
+            android:text="@string/utiliteDepense"/>
+
+        <Switch
+            android:id="@+id/idChoixDhDepense"
+            style="@style/styleChampFormulaire"
+            android:layout_below="@id/idUtiliteDepense"
+            android:text="@string/choixDateHeureGain"/>
+
+        <DatePicker
+            android:id="@+id/idDateDepense"
+            style="@style/styleChampFormulaire"
+            android:datePickerMode="calendar"
+            android:visibility="gone"
+            android:layout_below="@id/idChoixDhDepense"
+            android:layout_centerHorizontal="true"/>
+
+        <TimePicker
+            android:id="@+id/idTempsDepense"
+            style="@style/styleChampFormulaire"
+            android:layout_below="@id/idDateDepense"
+            android:visibility="gone"
+            android:timePickerMode="clock"
+            android:layout_centerHorizontal="true"/>
+
+
+        <Button
+            android:id="@+id/idBoutonSubmitDepense"
+            style="@style/styleBoutonSubmitFormulaire"
+            android:layout_below="@+id/idTempsDepense"
+            android:text="@string/boutonTexte" />
+
+    </RelativeLayout>
+
+
+</ScrollView>

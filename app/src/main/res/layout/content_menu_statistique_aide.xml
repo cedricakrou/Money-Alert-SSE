@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/idRelativeLayoutMenuStatistiqueAide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idRelativeLayoutIntroAide" >
+
+        <RelativeLayout
+            android:id="@+id/idEnteteMenuStatistiqueAide"
+            style="@style/styleEnteteMenuAide">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texteStatistique"
+                android:textColor="@color/couleurBlanche"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:id="@+id/idIndicateurMenuStatistiqueAide"
+                style="@style/styleIndicateurAide"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/idRelativeCorpsMenuStatistiqueAide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEnteteMenuStatistiqueAide"
+            android:layout_marginBottom="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textePresentationMenuStatistiqueAide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/texteGeneralStatistique"
+                android:layout_marginBottom="10sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/idRelativeLayoutEnregistrementStatistique"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textePresentationMenuStatistiqueAide"
+                android:layout_marginBottom="10sp">
+
+                <RelativeLayout
+                    android:id="@+id/idEnteteEnregistrementMenuStatistiqueAide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/espace"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texteStatistiqueGain"
+                        android:textColor="@color/couleurBlanche"
+                        />
+
+                    <ImageView
+                        android:id="@+id/idIndicateurEnregistrementStatistiqueAide"
+                        style="@style/styleIndicateurAide"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/idTexteEnregistrementMenuStatistiqueAide"
+                    style="@style/styleTexteDescriptifAide"
+                    android:text="@string/texteStatistiqueGainAide"
+                    android:layout_below="@id/idEnteteEnregistrementMenuStatistiqueAide"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/idRelativeVisualisationMenuStatistiqueAide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idRelativeLayoutEnregistrementStatistique"
+                android:layout_marginBottom="5sp" >
+
+                <RelativeLayout
+                    android:id="@+id/idEnteteVisualisationMenuStatistiqueAide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5sp"
+                    android:paddingLeft="@dimen/espace"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texteStatistiqueDepense"
+                        android:textColor="@color/couleurBlanche"
+                        />
+
+                    <ImageView
+                        android:id="@+id/idIndicateurVisualisationStatistiqueAide"
+                        style="@style/styleIndicateurAide"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/idTexteVisualisationMenuStatistiqueAide"
+                    style="@style/styleTexteDescriptifAide"
+                    android:text="@string/texteStatistiqueDepenseAide"
+                    android:layout_below="@id/idEnteteVisualisationMenuStatistiqueAide"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

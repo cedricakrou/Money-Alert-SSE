@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.statistique.StatistiqueDepense"
+    android:background="@color/couleurBlanche">
+
+    <Spinner
+        android:id="@+id/idSpinnerChoisirDiagrammeStatDepense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:visibility="visible">
+
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/idSpinnerChoisirTypeAffichageStatDepense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/idSpinnerChoisirDiagrammeStatDepense"
+        android:layout_alignParentEnd="true">
+
+    </Spinner>
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_below="@id/idSpinnerChoisirDiagrammeStatDepense"
+        android:id="@+id/pieChartDepense"
+        style="@style/styleStatistiqueMenuStat"
+        />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_below="@id/pieChartDepense"
+        android:id="@+id/idBarChartDepense"
+        style="@style/styleStatistiqueMenuStat"
+        />
+
+
+</RelativeLayout>

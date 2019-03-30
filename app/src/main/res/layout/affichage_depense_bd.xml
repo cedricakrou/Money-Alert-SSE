@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/couleurBlanche">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+        android:id="@+id/idEtuiDepense">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="@dimen/paddingAdroiteAffichageDonneeBd">
+
+        <TextView
+            android:id="@+id/libelleDepenseBd"
+            style="@style/styleAffichageDonneeBd"/>
+
+        <TextView
+            android:id="@+id/infoDateDepenseBd"
+            style="@style/styleAffichageDonneeBd"
+            android:layout_toEndOf="@id/libelleDepenseBd"
+            android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+            android:text="@string/periodeDateDepense" />
+
+        <TextView
+            android:id="@+id/dateDepenseBd"
+            style="@style/styleAffichageDonneeBd"
+            android:layout_toEndOf="@id/infoDateDepenseBd"
+            android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd" />
+
+        <TextView
+            android:id="@+id/infoHeureDepenseBd"
+            style="@style/styleAffichageDonneeBd"
+            android:layout_toEndOf="@id/dateDepenseBd"
+            android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+            android:text="@string/periodeHeure" />
+
+        <TextView
+            android:id="@+id/heureDepenseBd"
+            style="@style/styleAffichageDonneeBd"
+            android:layout_toEndOf="@id/infoHeureDepenseBd"
+            android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+            />
+
+
+
+        <TextView
+            android:id="@+id/descriptionDepenseBd"
+            android:layout_width="@dimen/largeurDescriptionMotifDonneBd"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|normal"
+            android:textSize="@dimen/tailleTexteAffichageDonnee"
+            android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+            android:layout_marginEnd="@dimen/marginEnbasAffichageDonneeBd"
+            android:layout_below="@id/libelleDepenseBd" />
+
+        <TextView
+            android:id="@+id/montantDepenseBd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/libelleDepenseBd"
+            android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+            android:layout_toEndOf="@id/descriptionDepenseBd"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold|italic"
+            android:textSize="@dimen/tailleTextemontantDonneBd" />
+
+        <TextView
+            android:id="@+id/textUtiliteDepenseBd"
+            android:layout_below="@id/montantDepenseBd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+            android:layout_marginEnd="@dimen/marginAdroiteAffichageDonneeBd"
+            android:textSize="@dimen/tailleTexteAffichageDonnee"
+            android:text="@string/texteUtilite"/>
+
+         <TextView
+             android:id="@+id/utiliteDepenseBd"
+             android:layout_toEndOf="@id/textUtiliteDepenseBd"
+             android:layout_below="@id/montantDepenseBd"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+             android:textSize="@dimen/tailleTexteAffichageDonnee"
+             android:textStyle="normal|italic"
+             android:textColor="@color/colorAccent"
+             android:layout_centerVertical="true"/>
+
+     </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

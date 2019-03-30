@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menu.statistique.Statistique"
+    android:background="@color/couleurBlanche">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/idAppBarStatistiqueFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/longueur_app_bar"
+            android:background="@color/colorPrimaryDark"
+            >
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/idTabLayoutStatistiqueFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idAppBarStatistiqueFragment"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabTextColor="@color/couleurBlanche"
+            app:tabIndicatorColor="@color/colorAccent"
+            android:background="@color/colorPrimaryDark"
+            app:tabSelectedTextColor="@color/colorAccent"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/idViewPaperStatistique"
+            android:layout_below="@id/idTabLayoutStatistiqueFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTop_viewpaper" >
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

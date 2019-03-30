@@ -1,0 +1,207 @@
+<resources>
+
+    // les info du menu parametre
+
+    <string name="parametre_ajouter_type_depense">Add a new type of expense</string>
+    <string name="parametre_ajouter_type_gain">Add a new type of earning</string>
+    <string name="parametre_langue">Language</string>
+    <string name="parametre_notification">Notification</string>
+    <string name="parametre_suggestion">Suggestion</string>
+
+    <string name="parametre_summary_suggestion">Click to make a suggestion</string>
+
+    <string name="parametre_valider">Validate</string>
+    <string name="parametre_annuler">Cancel</string>
+
+
+    <string name="parametre_summary_ajouter_type_depense">Click to add a new type of expense</string>
+    <string name="parametre_summary_ajouter_type_gain">Click to add a new type of earning</string>
+
+    <string name="parametre_summary_langue">Click to select your language</string>
+    <string name="parametre_summary_notification">Would you like to receive notifications?</string>
+
+    <string-array name="parametre_listeLangue">
+        <item>French</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="parametre_listeLangueKey">
+        <item>fr</item>
+        <item>en</item>
+    </string-array>
+
+
+    // parametre global de l'application
+
+    <string name="app_name">Money Alert SSE</string>
+    <string name="texteSortirDeLapp">"Would you exit ?"</string>
+    <string name="texteSortirOui">"Yes"</string>
+    <string name="texteSortirNon">"No"</string>
+
+
+    // parametre de depense
+
+    <string name="texteDepense">Spents</string>
+    <string name="utiliteDepense">Is this expense useful?</string>
+    <string name="periodeDateDepense">done</string>
+    <string name="texteUtilite">This expense was: </string>
+
+    <string name="periodeHeure">at</string>
+
+    // parametre de gain
+    <string name="montantTexte">Enter the amount</string>
+    <string name="descriptionTexte">Provide details on the operation</string>
+    <string name="boutonTexte">Save</string>
+
+    // parametre statistique
+
+    // paramatre budget
+
+    <string name="periodeDateBudget">add</string>
+
+    // parametre equipe SSE
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="texteGain">Earnings</string>
+    <string name="choixDateHeureGain">Do you want to choose the date? (Current date chosen by default)</string>
+    <string name="texteStatistique">Statisticals</string>
+    <string name="equipeSSE">Team SSE</string>
+    <string name="parametreSSE">Settings</string>
+    <string name="texteBudget">Budgets</string>
+    <string name="texteAccueil">Home</string>
+
+    <string-array name="utiliteDepense">
+        <item>utile</item>
+        <item>inutile</item>
+    </string-array>
+
+    <string name="texteEntreprise">ENTREPRISE</string>
+
+    // information SSE
+
+    <string name="texteSiteSSE">www.sse.ci</string>
+    <string name="texteSierpinski">SIERPINSKI</string>
+    <string name="numSSE">09882886</string>
+    <string name="emailSSE">ssentreprise912@gmail.com</string>
+    <string name="adresseSSE">Abidjan - Treichville</string>
+    <string name="facebookSSE">Sierpinski Entreprise - SSE</string>
+    <string name="instagramSSE">sse912</string>
+    <string name="presentationSSE">SSE is a startup founded in March 2018 by Ivorian students from of the prestigious School of Technology ESATIC.  \n
+        Dynamism, creativity and know-how are our key words.\n
+        We count in our ranks as passionate developers always in the scent of technology as crazy designers of ideas. A condensed technical and graphic art gathered in a single team that wants to respond brilliantly to your needs. \n
+        SSE, the originility at your service.
+    </string>
+
+
+
+    // les entetes
+
+    <string name="texteAffichageDepense">EXPENSES DISPLAY</string>
+    <string name="texteAffichageGain">EARNINGS DISPLAY</string>
+
+    <string name="texteEnregsitrementGain">EARNINGS REGISTRATION</string>
+    <string name="texteEnregsitrementDepense">REGISTRATION EXPENSE</string>
+
+    <string name="texteStatistiqueDepense">STATISTICS EXPENDITURES</string>
+    <string name="texteStatistiqueGain">STATISTICS GAINS</string>
+
+
+    // les infos du menu de suppression
+
+    <string name="texteSupprimerDonnee">Delete</string>
+    <string name="texteModifierDonnee">Edit</string>
+    <string name="texteDeselectionnerDonnee">Deselect</string>
+
+    <string name="infoNotif">Do you register your recent transactions?</string>
+
+    // menu principale
+
+    <string name="texteSoldeActuel">Current balance</string>
+    <string name="texteCompteEtOperation">All my accounts and operations</string>
+    <string name="texteMesRevenus">My earnings</string>
+    <string name="texteMesDepenses">My spents</string>
+    <string name="texteMonBudget">Estimated budget</string>
+
+    // new
+
+    <string name="texteSelectionnerUnTypeOperation">Select a type of operation</string>
+
+
+    <string name="aproposSSE">About</string>
+    <string name="aideSSE">Help</string>
+
+    <string name="introTexteApropos">
+        Money Alert SSE (Sierpinski Enterprise) is an expense management application available on Sunday, October 14, 2018. \n
+        It is at version 1.1. \n
+        It was thought and designed by members of the Sierpinski Company: \n
+    </string>
+
+    <string name="presentationMembreSSETexteApropos">
+
+        \t - TACKA Walter Mickael \n
+        \t - DIKE Jean Daniel \n
+        \t - EDOUKOU RICHMOND EKI \n
+        \t - ETTY FOULE ANGE AYMARD \n
+        \t - KAKOU AKROU CEDRIC \n
+        \t - ADOPO JORDAN SEBASTIEN LANDRY \n
+        \t - Edy \n
+        \t - AHISSAN OI SAMUEL \n
+        \t - CISSOKO YANN
+
+
+    </string>
+
+    <string name="conclusionTexteApropos">
+
+    MONEY ALERT SSE aims to help its users to control their money and to establish a provisional budget.
+
+    </string>
+
+
+    <string name="messageEchec">failure of the operation</string>
+    <string name="messageReusiste">Success of the operation</string>
+
+    <string name="texteIntroAide">How can you help?</string>
+
+
+    <string name="texteGeneralGain">The earnings menu contains 2 tabs</string>
+    <string name="texteEnregistrementGainAide">This tab contains a form that allows the user to enter the necessary information on his earnings.</string>
+    <string name="texteVisualisationGainAide">This tab contains a form that allows the user to enter the necessary information on his earnings.</string>
+
+    <string name="texteGeneralDepense">The Expense menu contains 2 tabs</string>
+    <string name="texteEnregistrementDepenseAide">This tab contains a form that allows the user to fill in the necessary information on his Expenses.</string>
+    <string name="texteVisualisationDepenseAide">This tab contains a form that allows the user to fill in the necessary information on his Expenses.</string>
+
+    <string name="texteGeneralStatistique">
+        The Statistics menu contains 2 tabs
+    </string>
+    <string name="texteStatistiqueGainAide">
+        This tab presents your different sources of earnings in a pie chart in percentage(%).
+    </string>
+
+
+    <string name="texteStatistiqueDepenseAide">
+        This tab is used to present statistics about your expenses. \n
+        They are divided into 2 categories: \n
+        \t - useful expenses \n
+        \t - the intimate expenses
+    </string>
+
+
+    <string name="texteGeneralBudget">
+        The Budgets menu contains 2 tabs
+    </string>
+
+    <string name="texteBudgetGainAide">
+        This tab allows to inform your possible income of money in the period.
+    </string>
+
+    <string name="texteBudgetDepenseAide">
+        This tab is used to record planned expenses for the current period in order to develop the best control of your expenses.
+    </string>
+
+
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/couleurBlanche">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/idLibelleGainBudget"
+            style="@style/styleChampFormulaire"/>
+
+        <EditText
+            android:drawableStart="@drawable/argent"
+            android:id="@+id/idMontantGainBudget"
+            style="@style/styleChampFormulaire"
+            android:layout_below="@id/idLibelleGainBudget"
+            android:inputType="numberDecimal"
+            android:hint="@string/montantTexte"
+            android:drawableLeft="@drawable/argent" />
+
+        <EditText
+            android:id="@+id/idDescriptionDuGainBudget"
+            android:drawableStart="@drawable/description"
+            style="@style/styleChampFormulaire"
+            android:layout_below="@id/idMontantGainBudget"
+            android:inputType="textMultiLine"
+            android:hint="@string/descriptionTexte"
+            android:drawableLeft="@drawable/description" />
+
+        <Switch
+            android:id="@+id/idChoixDhGainBudget"
+            style="@style/styleChampFormulaire"
+            android:layout_below="@id/idDescriptionDuGainBudget"
+            android:text="@string/choixDateHeureGain"/>
+
+
+        <DatePicker
+            android:id="@+id/idDateGainBudget"
+            style="@style/styleChampFormulaire"
+            android:visibility="gone"
+            android:layout_below="@id/idChoixDhGainBudget"
+            android:datePickerMode="calendar" />
+
+        <TimePicker
+            android:id="@+id/idTempsGainBudget"
+            style="@style/styleChampFormulaire"
+            android:visibility="gone"
+            android:layout_below="@id/idDateGainBudget"
+            android:timePickerMode="clock" />
+
+
+        <Button
+            android:id="@+id/idBoutonSubmitGainBudget"
+            style="@style/styleBoutonSubmitFormulaire"
+            android:layout_below="@id/idTempsGainBudget"
+            android:text="@string/boutonTexte"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>

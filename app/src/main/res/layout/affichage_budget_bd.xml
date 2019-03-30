@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/couleurBlanche">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:id="@+id/idEtuiBudget">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddingAdroiteAffichageDonneeBd" >
+
+            <TextView
+                android:id="@+id/libelleBudgetBd"
+                style="@style/styleAffichageDonneeBd" />
+
+            <TextView
+                android:id="@+id/infoDateBudgetBd"
+                style="@style/styleAffichageDonneeBd"
+                android:layout_toEndOf="@id/libelleBudgetBd"
+                android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                android:layout_toRightOf="@id/libelleBudgetBd"
+                android:layout_marginLeft="@dimen/marginAdroiteAffichageDonneeBd" />
+
+            <TextView
+                android:id="@+id/dateBudgetBd"
+                style="@style/styleAffichageDonneeBd"
+                android:layout_toEndOf="@id/infoDateBudgetBd"
+                android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                android:layout_toRightOf="@id/infoDateBudgetBd"
+                android:layout_marginLeft="@dimen/marginAdroiteAffichageDonneeBd" />
+
+            <TextView
+                android:id="@+id/infoHeureBudgetBd"
+                style="@style/styleAffichageDonneeBd"
+                android:layout_toEndOf="@id/dateBudgetBd"
+                android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                android:text="@string/periodeHeure"
+                android:layout_toRightOf="@id/dateBudgetBd"
+                android:layout_marginLeft="@dimen/marginAdroiteAffichageDonneeBd" />
+
+            <TextView
+                android:id="@+id/heureBudgetBd"
+                style="@style/styleAffichageDonneeBd"
+                android:layout_toEndOf="@id/infoHeureBudgetBd"
+                android:layout_marginStart="@dimen/marginAdroiteAffichageDonneeBd"
+                android:layout_toRightOf="@id/infoHeureBudgetBd"
+                android:layout_marginLeft="@dimen/marginAdroiteAffichageDonneeBd" />
+
+
+
+            <TextView
+                android:id="@+id/descriptionBudgetBd"
+                android:layout_width="@dimen/largeurDescriptionMotifDonneBd"
+                android:layout_height="wrap_content"
+                android:textStyle="italic|normal"
+                android:textSize="@dimen/tailleTexteAffichageDonnee"
+                android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+                android:layout_marginEnd="@dimen/marginEnbasAffichageDonneeBd"
+                android:layout_below="@id/libelleBudgetBd"
+                android:layout_marginRight="@dimen/marginEnbasAffichageDonneeBd" />
+
+            <TextView
+                android:id="@+id/montantBudgetBd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/libelleBudgetBd"
+                android:layout_marginTop="@dimen/marginTopAffichageDonneeBd"
+                android:layout_toEndOf="@id/descriptionBudgetBd"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold|italic"
+                android:textSize="@dimen/tailleTextemontantDonneBd"
+                android:layout_toRightOf="@id/descriptionBudgetBd"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

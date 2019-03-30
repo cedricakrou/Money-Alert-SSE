@@ -1,0 +1,64 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    // les dimensions par defaut du systeme
+
+    <dimen name="activity_horizontal_margin">16sp</dimen>
+    <dimen name="activity_vertical_margin">16sp</dimen>
+    <dimen name="nav_header_vertical_spacing">8sp</dimen>
+    <dimen name="nav_header_height">176sp</dimen>
+    <dimen name="fab_margin">16sp</dimen>
+
+
+    // definition des margin
+
+    <dimen name="marginAdroiteAffichageDonneeBd">7sp</dimen>
+    <dimen name="marginTopAffichageDonneeBd">16dp</dimen>
+    <dimen name="marginEnbasAffichageDonneeBd">16sp</dimen>
+
+    // definition des padding
+
+    <dimen name="paddingAdroiteAffichageDonneeBd">25sp</dimen>
+
+
+    // definition taille des textes
+
+    <dimen name="tailleTexteAffichageDonnee">15sp</dimen>
+    <dimen name="tailleTextemontantDonneBd">25sp</dimen>
+
+    // taille de description du motif
+
+    <dimen name="largeurDescriptionMotifDonneBd">150sp</dimen>
+
+
+    <dimen name="longueur_app_bar">100sp</dimen>
+    <dimen name="marginTop_viewpaper">3sp</dimen>
+    <dimen name="tailleSSE">25sp</dimen>
+    <dimen name="tailleReseauxSociaux">60sp</dimen>
+    <dimen name="tailleImageView">160sp</dimen>
+    <dimen name="marginCote_viewpaper">40sp</dimen>
+    <dimen name="viewInfoEquipe">200sp</dimen>
+    <dimen name="viewInfoEquipeTop">60sp</dimen>
+    <dimen name="longueurTexviewInfo">140sp</dimen>
+    <dimen name="marginTopComposant">15sp</dimen>
+    <dimen name="tailleTexteBienvenueSSE">30sp</dimen>
+    <dimen name="paddingSeConnecter">30sp</dimen>
+    <dimen name="tailleTexteDescriptifSSE">15sp</dimen>
+    <dimen name="tailleImageSSEenregistrement">120sp</dimen>
+    <dimen name="tailleR1AccueilUser">250sp</dimen>
+    <dimen name="tailleCardviewAccueilUser">200sp</dimen>
+    <dimen name="tailleCardviewAccueilUserLargeur">250sp</dimen>
+    <dimen name="marginImageSSEenregistrement">50sp</dimen>
+    <dimen name="marginImageCardviewAccueilUser">80sp</dimen>
+    <dimen name="espace">20sp</dimen>
+
+
+    // taille des statistiques
+
+    <dimen name="tailleStat">400sp</dimen>
+
+
+    <dimen name="tailleImage">24sp</dimen>
+
+
+</resources>

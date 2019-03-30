@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/idRelativeLayoutMenuGainAide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idRelativeLayoutIntroAide" >
+
+        <RelativeLayout
+            android:id="@+id/idEnteteMenuGainAide"
+            style="@style/styleEnteteMenuAide">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texteGain"
+                android:textColor="@color/couleurBlanche"
+                android:layout_centerInParent="true"
+                />
+
+            <ImageView
+                android:id="@+id/idIndicateurMenuGainAide"
+                style="@style/styleIndicateurAide"
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/idRelativeCorpsMenuGainAide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idEnteteMenuGainAide"
+            android:layout_marginBottom="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textePresentationMenuGainAide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/texteGeneralGain"
+                android:layout_marginBottom="10sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/idRelativeLayoutEnregistrementGain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textePresentationMenuGainAide"
+                android:layout_marginBottom="10sp">
+
+                <RelativeLayout
+                    android:id="@+id/idEnteteEnregistrementMenuGainAide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/espace"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texteEnregsitrementGain"
+                        android:textColor="@color/couleurBlanche"
+                        />
+
+                    <ImageView
+                        android:id="@+id/idIndicateurEnregistrementGainAide"
+                        style="@style/styleIndicateurAide"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/idTexteEnregistrementMenuGainAide"
+                    style="@style/styleTexteDescriptifAide"
+                    android:text="@string/texteEnregistrementGainAide"
+                    android:layout_below="@id/idEnteteEnregistrementMenuGainAide"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/idRelativeVisualisationMenuGainAide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idRelativeLayoutEnregistrementGain"
+                android:layout_marginBottom="5sp" >
+
+                <RelativeLayout
+                    android:id="@+id/idEnteteVisualisationMenuGainAide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5sp"
+                    android:paddingLeft="@dimen/espace"
+                    android:background="@color/colorAccent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/texteAffichageGain"
+                        android:textColor="@color/couleurBlanche"
+                        />
+
+                    <ImageView
+                        android:id="@+id/idIndicateurVisualisationGainAide"
+                        style="@style/styleIndicateurAide" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/idTexteVisualisationMenuGainAide"
+                    style="@style/styleTexteDescriptifAide"
+                    android:text="@string/texteVisualisationGainAide"
+                    android:layout_below="@id/idEnteteVisualisationMenuGainAide"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
